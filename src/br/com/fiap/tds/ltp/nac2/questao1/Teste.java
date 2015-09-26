@@ -7,7 +7,7 @@ public class Teste {
 	public static void main(String[] args) {
 		//VeiculoDAO veiculoDAO = new VeiculoDAO();
 		//Veiculo veiculo = new Veiculo();
-
+//Testando GIT
 		//novo Veiculo
 //		veiculo.setAno("2002");
 //		veiculo.setModelo("KAmodesto");
