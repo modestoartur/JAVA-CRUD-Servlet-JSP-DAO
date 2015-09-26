@@ -1,0 +1,23 @@
+/*
+ * style.css 
+ */
+.container, .container-fluid {
+ padding-right: 15px;
+ padding-left: 15px;
+
+}
+.row {
+ margin-bottom: 20px;
+}
+[class*="col-"], header, footer, nav, aside, section, div[role="main"] {
+ padding-top: 15px;
+ padding-bottom: 15px;
+
+ text-align: center;
+}
+div[role="main"] {
+
+}
+div[role="main"], nav, aside {
+ height: 600px;
+}
