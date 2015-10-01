@@ -5,8 +5,6 @@ import java.util.*;
 import br.com.fiap.tds.ltp.nac2.questao1.fabrica.ConnectionFactory;
 import br.com.fiap.tds.ltp.nac2.questao1.model.Veiculo;
 
-import java.io.*;
-
 
 public class VeiculoDAO extends ConnectionFactory{
 	 static String sql = null;
@@ -97,54 +95,5 @@ public class VeiculoDAO extends ConnectionFactory{
 		    }
 		 
 		 
-		public void exportar()  {
-			
-
-
-		    String sql="";  
-		    String saida = "veiculos";  
-		    String caminhoArquivo = "./" + saida +".csv";  
-		    String ConteudoArquivo = "";
-		    String CabecalhoArquivo = "";
-		    BufferedWriter ArquivoTXT = null;  
-		     
-		    try{  
-		        ArquivoTXT = new BufferedWriter(new FileWriter(caminhoArquivo));  
-		     abrirBanco();
-				sql = "SELECT * FROM TB_LTP_VEICULO WHERE ANO = 2015";
-				stmt = conn.prepareStatement(sql);
-				stmt.execute();
-				ResultSet rs = stmt.executeQuery();
-		        CabecalhoArquivo = "ANO, PLACA, MODELO, MOTOR";
-		        ArquivoTXT.write(CabecalhoArquivo); 
-		        ArquivoTXT.newLine();
-		        while(rs.next()){   
-		            ConteudoArquivo = rs.getString("ANO")+ ", "
-		            				+ rs.getString("PLACA")+ ", " 
-		            				+ rs.getString("MODELO")+ ", "  
-		            				+ rs.getString("MOTOR")+ ","  ;
-		            ArquivoTXT.write(ConteudoArquivo);  
-		            ArquivoTXT.newLine();   
-		            }  
-		        System.out.println("debugando");
-		        } catch (Exception e) {  
-		         System.err.println("Erro ao exportar arquivo TXT: " + e);  
-		        } finally {  
-		        
-		              try {
-						ArquivoTXT.flush();
-						 ArquivoTXT.close(); 
-						 fecharBanco();
-					} catch (IOException e) {
-						e.printStackTrace();
-					}  
-		        }  
-		    }  
+	
 }
-		
-		
-		
-
-
-
-

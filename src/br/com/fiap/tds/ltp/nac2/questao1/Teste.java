@@ -1,6 +1,6 @@
 package br.com.fiap.tds.ltp.nac2.questao1;
 
-import br.com.fiap.tds.ltp.nac2.questao1.dao.VeiculoDAO;
+
 
 public class Teste {
 	
@@ -38,9 +38,6 @@ public class Teste {
 
 		//veiculoDAO.listarVeiculo();
 		
-		//arquivo
-		VeiculoDAO veiculoDAO = new VeiculoDAO();
-		veiculoDAO.exportar();
-
+	
 	}
 }

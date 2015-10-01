@@ -20,7 +20,7 @@
         <li><a href="./alterar.jsp">Alterar</a></li>
         <li><a href="./listar.jsp">Listar</a></li>
         <li><a href="./exportar.jsp">Exportar</a></li>
-        <li><a href="#">Sair</a></li>
+        <li><a href="http://www.google.com.br">Sair</a></li>
         
       </ul>
     </div><!--/.nav-collapse -->
